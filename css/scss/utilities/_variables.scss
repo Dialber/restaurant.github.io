@@ -1,0 +1,62 @@
+$color-white:#fff;
+$color-blue:#7287AE;
+$color-violet:rgb(50, 0, 66);
+$color-grey:#504f4f;
+$color-ligth-yellow:#F2CE94;
+$color-ligth-grey:#e3ecc2;
+$color-orange:#FECC8C;
+
+$color-primary:$color-blue;//color más usado
+$color-secundary:$color-violet;
+$color-card-text:$color-grey;//color texto de las cards
+$color-link:$color-ligth-yellow;//color para seudoclases en los links
+$color-link-primary:$color-white;//color por defecto links
+
+$point-width-small:0.33rem;//puntos para las capas pequeñas
+$point-width-big:.5rem;//puntos para las capas grandes
+$point-width-extrabig:1rem;
+
+$phones:"(min-width:24rem)";
+$landscape-phones:"(min-width:36rem)";// Small devices (landscape phones, 576px and up)
+$tablets:"(min-width:48rem)";// Medium devices (tablets, 768px and up)
+$desktops:"(min-width:62rem)";//Large devices (desktops, 992px and up)
+$large-desktops:"(min-width:75rem)";// Big large devices (large desktops, 1200px and up)
+$extra-large-desktops:"(min-width:110rem)";// 1760px and up)
+$four-k:"(min-width:160rem)";//4k...1760px and up
+
+/*tamaños base*/
+$font-h1:4.598rem;
+$font-h1-small:3.598rem;
+$font-h2:2.143rem;
+$font-h3:1.473rem;
+$font-h4:1.1rem;
+$font-p:1.116rem;
+$font-a:1.116rem;
+$font-span:1.25rem;
+$font-btn:1.033rem;
+$line-height:1.5rem;
+$letter-spacing:0,008rem;
+$word-spacing: 0.1rem; 
+
+/* 
+@media #{$phones}{
+
+}
+@media  #{$landscape-phones}{
+   
+}
+@media  #{$tablets}{
+  
+}
+@media  #{$desktops}{
+   
+}
+@media  #{$large-desktops}{
+   
+}
+@media  #{$extra-large-desktops}{
+    
+}
+@media  #{$four-k}{
+   
+} */

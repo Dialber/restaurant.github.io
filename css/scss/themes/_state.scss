@@ -1,0 +1,88 @@
+@import"../utilities/mixins";
+@import "../utilities/variables";
+.hideText{
+    display: block;
+    height: 4.4rem;    
+    -webkit-line-clamp: 3;
+    -moz-box-orient: vertical;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.hideTextPromo{//el tamaño de la fuente en estos párrafos es más grande por eso el heigth debe serlo también.
+    @extend .ellipsis;
+    cursor: default; 
+}
+.showText{
+    height: auto;
+    -webkit-line-clamp: none; 
+    overflow: visible;
+    cursor: default;
+}
+//Ellipsis($font-size,$line-height,$linesToShow,$margin:"0")
+.ellipsis{
+    cursor: pointer;
+    pointer-events:auto ;
+    @include Ellipsis($font-p,1.5,4,0);
+
+}
+.ellipsis--2{    
+    @include Ellipsis(1.295rem,1.5,4,0);
+}
+.showMenu{    
+    display: flex;
+    transform: translateY(0);
+    transition: transform 1.5s ease;
+}
+.opacityElement{
+    position: relative;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        position: absolute;
+        background-image: linear-gradient(rgba(0 ,0 ,0 ,0.7),rgba(0 ,0 ,0, 0.7));;
+        z-index: 99;
+    }
+}
+/* .shadow{
+    position: relative;  
+    overflow: hidden;
+    &::after,&::before{
+        content: "";
+        display: block;
+        background-color: $color-white;
+        position: absolute;
+        transition: transform .5s ease; 
+    }
+    &::before{        
+        width: 100%;
+        height: .2rem;       
+        bottom: 0;
+        left: 0;
+        transform: translateX(-120%);
+    }
+    &:focus::before{
+        transform: translateX(0);
+    }
+    &:hover::before{
+        transform: translateX(0);
+    }
+} */
+@media  #{$tablets}{
+     
+}
+@media  #{$desktops}{
+    
+}
+@media #{$large-desktops}{
+    
+}
+@media #{$extra-large-desktops}{
+    
+}
+@media #{$four-k}{
+   
+}

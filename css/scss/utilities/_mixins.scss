@@ -1,0 +1,53 @@
+@import "../utilities/variables";
+/*
+mixin creado para el comportamiento hover,active,focus;
+*/
+@mixin conduct($color1,$color2,$is-Font){
+    cursor: pointer;
+    &:active{
+        transform: scale(0.95);
+    }
+    @if($is-Font)
+    {
+        &:focus,&:hover{
+            color: $color1;
+            background-color: $color2;
+            box-shadow:0 0 0 .2rem $color1 inset;
+            transition: box-shadow ease .3s;
+        }
+        &:active{
+            transform: scale(.9);
+        }
+    }
+    @else{
+        &:focus,&:hover{
+            background-color: darken($color1, 5%);
+            box-shadow:0 0 0 .2rem $color2,0 0 0 .4rem $color1;
+            transition: box-shadow ease .3s;
+        }        
+        &:active{
+            background-color: darken($color1, 40%);       
+        }     
+    }   
+}
+//Si el margen vertical del primer elemento es diferente de cero hay que especificarlo
+@mixin Ellipsis($font-size,$line-height,$linesToShow,$margin:"0") {
+    $heightElemnt:$font-size*$line-height*$linesToShow;
+    display: block;
+    font-size: $font-size*1;
+    line-height: $line-height;
+    max-height: ($heightElemnt+$margin)*1;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $linesToShow;
+    -webkit-box-direction: vertical;
+    p:not(:first-of-type){
+        display: none;
+    }
+}
+@mixin points($color,$width,$height,$width-point){
+    width: $width;
+    height: $height;   
+    background: radial-gradient($width-point circle at center center,$color 50%, transparent 50%) 0 0/20% 25%;    
+}

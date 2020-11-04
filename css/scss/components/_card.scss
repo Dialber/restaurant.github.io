@@ -1,0 +1,70 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+.card{
+	width: 85%;   
+	margin-bottom: 2rem;
+	background-color:$color-white;
+	color:$color-card-text;
+	&:hover,&:focus {
+		box-shadow: 0px 0 0 .3rem $color-ligth-grey,0px 0 0 .6rem $color-primary;
+		transition: box-shadow ease .3s;
+	}
+}
+.card__img{
+	width: 100%;
+}
+.card__containerText{
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	padding: .9rem .8rem 2.5625rem;
+	display: flex;
+	flex-direction: column;
+}
+.card__h3{
+	margin-bottom: 1rem;
+}
+.card__close{      
+	@include conduct($color-card-text,$color-primary,true);
+	align-self: flex-end;
+	display: none;
+	padding:0;
+	margin-top:1rem;
+	border: 0;
+	&::before{
+		font-size: 2rem;
+	}
+}
+.card__parraf{
+	margin-bottom: .5rem; 
+	width: 100%;  
+	display: flex;
+	flex-direction: column;   
+}
+.card__p{
+	pointer-events: none;
+	&:focus{
+		box-shadow:0 0 .1rem .2rem transparent,0 0 .1rem .3rem $color-primary inset;
+	}
+}
+@media  #{$landscape-phones}{
+	.card{
+		width: 35%;
+	}
+}
+@media  #{$tablets}{
+  
+}
+@media  #{$desktops}{
+	
+}
+@media  #{$large-desktops}{
+	.card{
+		width: 23.541667%; /* 339px/1440 */
+	}
+}
+@media  #{$extra-large-desktops}{
+}
+@media  #{$four-k}{
+   
+}

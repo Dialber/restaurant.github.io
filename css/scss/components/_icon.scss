@@ -1,0 +1,28 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+.icon{    
+    font-size: 1.8rem;  
+    color:#fff;  
+    @include conduct($color-primary,$color-white,true);
+}
+
+@media #{$landscape-phones}{
+    
+}
+@media #{$tablets}{
+   
+}
+@media #{$desktops}{
+   
+}
+@media #{$large-desktops}{
+    
+} 
+
+@media #{$extra-large-desktops}{
+    
+} 
+
+@media #{$four-k}{
+   
+} 

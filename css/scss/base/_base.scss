@@ -1,0 +1,90 @@
+@import "../utilities/variables";
+body{
+    width: 100%;
+	text-align: center;
+	margin: 0 auto;
+    color: $color-white;
+    background-color: $color-ligth-grey;
+    font-size: 90%;
+    letter-spacing: $letter-spacing;
+    word-spacing: $word-spacing; 
+    line-height:$line-height;
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+}
+html, body{
+    scroll-behavior: smooth;
+    font-size: .92rem;
+}
+h1,h2,h3,h4{    
+    line-height:1.2;
+    font-family: "Ubuntu",sans-serif;
+    font-weight: 900;
+}
+h1{
+    font-size: $font-h1-small;
+}
+h2{
+    font-size: $font-h2;
+}
+h3{
+    font-size: $font-h3;;    
+}
+h4{
+    font-size: $font-h4;
+    text-transform: uppercase;
+}
+img,video{
+    max-width: 100%;
+    height: auto;
+}
+p{
+    font-weight: 100;
+    font-size: $font-p;
+}
+a{
+    text-decoration: none;
+    font-size: $font-a;
+}
+span{
+    font-weight: bolder;
+    font-size:$font-span;
+}
+button{
+    font-size: $font-btn;
+    font-family: "Ubuntu",sans-serif;
+}
+@media #{$landscape-phones}{
+    html, body{
+        font-size: 1rem;
+    }  
+}
+@media #{$tablets}{
+    html, body{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: $font-h1;
+    }
+}
+@media #{$desktops}{
+    html, body{
+        font-size: 1.3rem;
+    }
+}
+@media #{$large-desktops}{
+    html, body{
+        font-size: 1.40rem;
+    }
+}
+@media #{$extra-large-desktops}{
+    html, body{
+        font-size: 2.3rem;
+    }
+}
+
+@media #{$four-k}{
+    html, body{
+        font-size: 3.5rem;
+    }
+}

@@ -1,0 +1,39 @@
+@import "../components/food__information";
+@import "../utilities/variables";
+.voucher__container{
+    @extend .food__information;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    color:$color-primary;  
+}
+.voucher__p{
+    text-align: center;
+    font-size: 1.295rem;
+}
+.voucher__h2{
+    color:$color-primary;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 10;
+}
+
+@media #{$landscape-phones}{
+    .voucher__container{
+        width: 80%;
+    }
+}
+@media #{$tablets}{
+    .voucher__container{
+        width: 80%;
+    }
+}
+@media #{$desktops}{
+    .voucher__container{
+        width: 70%;
+    }
+}
+@media #{$large-desktops}{
+  
+}

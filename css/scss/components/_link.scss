@@ -1,0 +1,13 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+.link{        
+    &:link{       
+        color: $color-link-primary;
+    }
+    &:visited{
+        color:darken($color-link, 50%);
+    }
+    &:hover,&:focus,&:active{
+        color:darken($color-link, 100%);
+    }
+}

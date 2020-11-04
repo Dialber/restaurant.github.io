@@ -1,0 +1,7 @@
+@import "../utilities/variables";
+
+@media #{$phones}{
+    .containerAbout__ul{
+        width: auto;
+    }
+}

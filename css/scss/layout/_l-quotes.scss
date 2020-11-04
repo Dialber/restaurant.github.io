@@ -1,0 +1,49 @@
+@import "../components/voucher__container";
+.l-quotes{
+    @extend .voucher__container;   
+    margin-bottom: 5.5rem;
+    padding-top: 4rem;
+}
+.quotes__h2{
+    font-family: "Raleway";
+    font-weight: 800;
+    position: relative;
+    &::before{
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+}
+.quotes__span{
+    position: absolute;
+    clip: rect(0 0 0 0 );
+    width: 0;
+    height: 0;
+}
+.quotes__p{    
+    text-align: center;
+    font-size: 1.674rem;
+    line-height: 1.9rem;
+}
+.quotes__h3{
+    font-size: 1.86rem;
+}
+
+@media #{$landscape-phones}{
+   
+}
+@media #{$tablets}{
+   
+}
+@media #{$desktops}{    
+   
+}
+@media #{$large-desktops}{
+    
+}
+@media #{$extra-large-desktops}{
+    
+}
+@media #{$four-k}{
+   
+}

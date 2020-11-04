@@ -1,0 +1,66 @@
+@import "../utilities/variables";
+.food__container{
+    display: flex;
+    flex-direction: column;
+    background-color:$color-white;
+}
+.food__container--rotate{
+    flex-direction: column-reverse;
+}
+.food__containerImg{
+    width: 100%;
+    height: auto;  
+    position: relative; 
+    &::after{
+        position: absolute;
+        display: block;
+        content: "";
+        bottom: -3.3rem;
+        left: 45%;
+        width: 6rem;
+        height: 5rem;
+        background: url("../../../images/pointsBlues.svg") 0 0 /100% no-repeat border-box; 
+    }
+    &:last-of-type{
+        &::after{
+            width: 6rem;
+            height: 5rem;
+            background: url("../../../images/points.svg") 0 0 /100% no-repeat border-box; 
+        }
+    }    
+}
+@media  #{$landscape-phones}{    
+    .food__container{
+        flex-direction: row;
+    }
+    .food__information{
+        width: 50%;
+    }
+    .food__containerImg{
+        width: 50%;
+    }
+}
+@media  #{$tablets}{
+   
+}
+@media  #{$desktops}{
+    
+}
+@media  #{$large-desktops}{
+    .food__containerImg{
+        &::after{
+            width: 8rem;
+            height: 6rem;
+            bottom: -3.5rem;
+        }
+        &:last-of-type{
+            &::after{
+                width: 8rem;
+                height: 6rem;
+            }
+        }
+    }
+}
+@media  #{$extra-large-desktops}{
+    
+}

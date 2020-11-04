@@ -1,0 +1,33 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+.button{
+    display: inline-block;   
+    background-color:$color-primary;
+    color: #ffffff;   
+    padding: .7rem 2.3rem;
+    font-weight: 400;
+    border: 0;
+    border-radius: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.217rem;
+    @include conduct($color-primary,$color-white,false);
+    margin-bottom: 7.604rem;
+}
+@media  #{$landscape-phones}{
+    
+}
+@media  #{$tablets}{
+   
+}
+@media  #{$desktops}{
+    
+}
+@media  #{$large-desktops}{
+   
+}
+@media  #{$extra-large-desktops}{
+    
+}
+@media  #{$four-k}{
+   
+}

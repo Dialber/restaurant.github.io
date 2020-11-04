@@ -1,0 +1,26 @@
+ @import "../utilities/variables";
+.button--voucher{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+@media  #{$landscape-phones}{
+   
+}
+@media  #{$tablets}{
+    
+}
+@media  #{$desktops}{
+   
+}
+@media  #{$large-desktops}{
+    .button--voucher{
+        padding-bottom: 1.6rem;
+        padding-top: 1.6rem;
+    }
+}
+@media  #{$extra-large-desktops}{
+   
+}
+@media  #{$four-k}{
+   
+}

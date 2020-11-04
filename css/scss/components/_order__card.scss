@@ -1,0 +1,66 @@
+@import "../utilities/variables";
+.order__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    >*:not(p){
+        margin-bottom: 1.5rem;
+    }
+    &:last-of-type(){
+        margin-bottom: 0;
+    }
+}
+.order__h2{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.order__p{
+    text-align: center;
+    font-size:0.848rem;
+    line-height: 1.208rem;
+}
+.order__h3{
+    text-transform: capitalize;
+    font-size: 2.034rem;
+}
+.order__span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;   
+    background-color: #fff;
+    color: $color-primary;
+    font-size: 2.034rem;
+    font-weight: 900;
+}
+@media #{$landscape-phones}{
+    .order__card{
+        width: 40%;
+    }
+}
+@media #{$tablets}{
+    
+}
+@media #{$desktops}{
+   
+}
+@media #{$large-desktops}{
+    .order__card{
+        width: 29%;
+    }
+     
+}
+@media #{$extra-large-desktops}{
+   
+}
+@media #{$four-k}{
+  
+}
