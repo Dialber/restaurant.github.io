@@ -19,13 +19,13 @@
         left: 45%;
         width: 6rem;
         height: 5rem;
-        background: url("../../../images/pointsBlues.svg") 0 0 /100% no-repeat border-box; 
+        background: url("../images/pointsBlues.svg") 0 0 /100% no-repeat border-box; 
     }
     &:last-of-type{
         &::after{
             width: 6rem;
             height: 5rem;
-            background: url("../../../images/points.svg") 0 0 /100% no-repeat border-box; 
+            background: url("../images/points.svg") 0 0 /100% no-repeat border-box; 
         }
     }    
 }
