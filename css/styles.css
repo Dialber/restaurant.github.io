@@ -922,12 +922,12 @@ mixin creado para el comportamiento hover,active,focus;
   left: 45%;
   width: 6rem;
   height: 5rem;
-  background: url("../../../images/pointsBlues.svg") 0 0/100% no-repeat border-box;
+  background: url("../images/pointsBlues.svg") 0 0/100% no-repeat border-box;
 }
 .food__containerImg:last-of-type::after {
   width: 6rem;
   height: 5rem;
-  background: url("../../../images/points.svg") 0 0/100% no-repeat border-box;
+  background: url("../images/points.svg") 0 0/100% no-repeat border-box;
 }
 
 @media (min-width:36rem) {
@@ -2056,9 +2056,9 @@ mixin creado para el comportamiento hover,active,focus;
 mixin creado para el comportamiento hover,active,focus;
 */
 .l-header {
-  background: url("../../../images/backgroundTop.svg") 0 100%/133% auto no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(50%, #7287AE), color-stop(50%, transparent));
-  background: url("../../../images/backgroundTop.svg") 0 100%/133% auto no-repeat, -o-linear-gradient(top, #7287AE 50%, transparent 50%);
-  background: url("../../../images/backgroundTop.svg") 0 100%/133% auto no-repeat, linear-gradient(to bottom, #7287AE 50%, transparent 50%);
+  background: url("../images/backgroundTop.svg") 0 100%/133% auto no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(50%, #7287AE), color-stop(50%, transparent));
+  background: url("../images/backgroundTop.svg") 0 100%/133% auto no-repeat, -o-linear-gradient(top, #7287AE 50%, transparent 50%);
+  background: url("../images/backgroundTop.svg") 0 100%/133% auto no-repeat, linear-gradient(to bottom, #7287AE 50%, transparent 50%);
   padding-bottom: 4rem;
   width: 100%;
   margin-left: auto;
@@ -2071,7 +2071,7 @@ mixin creado para el comportamiento hover,active,focus;
   position: absolute;
   width: 6rem;
   height: 5rem;
-  background: url("../../../images/points.svg") 0 0/100% no-repeat border-box;
+  background: url("../images/points.svg") 0 0/100% no-repeat border-box;
 }
 .l-header::before {
   bottom: 4rem;
@@ -2228,7 +2228,7 @@ mixin creado para el comportamiento hover,active,focus;
   position: absolute;
   width: 6rem;
   height: 5rem;
-  background: url("../../../images/pointsBlues.svg") 0 0/100% no-repeat border-box;
+  background: url("../images/pointsBlues.svg") 0 0/100% no-repeat border-box;
   bottom: 0.5rem;
   right: 1rem;
   -webkit-clip-path: inset(0 18% 0 0);
@@ -2386,14 +2386,14 @@ mixin creado para el comportamiento hover,active,focus;
   left: 2.5rem;
   width: 6rem;
   height: 5rem;
-  background: url("../../../images/points.svg") 0 0/100% no-repeat border-box;
+  background: url("../images/points.svg") 0 0/100% no-repeat border-box;
   -webkit-clip-path: inset(40% 0 0 0);
           clip-path: inset(40% 0 0 0);
 }
 .l-voucher::after {
   width: 6rem;
   height: 5rem;
-  background: url("../../../images/pointsBlues.svg") 0 0/100% no-repeat border-box;
+  background: url("../images/pointsBlues.svg") 0 0/100% no-repeat border-box;
   right: 2.5rem;
   bottom: -3.3rem;
 }
@@ -2660,9 +2660,9 @@ mixin creado para el comportamiento hover,active,focus;
   position: relative;
   padding-top: 2rem;
   padding-bottom: 1rem;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #7287AE), color-stop(60%, transparent)), url("../../../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
-  background: -o-linear-gradient(bottom, #7287AE 60%, transparent 60%), url("../../../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
-  background: linear-gradient(to top, #7287AE 60%, transparent 60%), url("../../../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #7287AE), color-stop(60%, transparent)), url("../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
+  background: -o-linear-gradient(bottom, #7287AE 60%, transparent 60%), url("../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
+  background: linear-gradient(to top, #7287AE 60%, transparent 60%), url("../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
 }
 .l-footer::after, .l-footer::before {
   content: "";
@@ -2674,7 +2674,7 @@ mixin creado para el comportamiento hover,active,focus;
 .l-footer::before {
   width: 6rem;
   height: 5rem;
-  background: url("../../../images/pointsBlues.svg") 0 0/100% no-repeat border-box;
+  background: url("../images/pointsBlues.svg") 0 0/100% no-repeat border-box;
   top: 0.5rem;
   left: 2.5rem;
   z-index: 10;
@@ -2696,9 +2696,9 @@ mixin creado para el comportamiento hover,active,focus;
 }
 @media (min-width:48rem) {
   .l-footer {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #7287AE), color-stop(40%, transparent)), url("../../../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
-    background: -o-linear-gradient(bottom, #7287AE 40%, transparent 40%), url("../../../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
-    background: linear-gradient(to top, #7287AE 40%, transparent 40%), url("../../../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #7287AE), color-stop(40%, transparent)), url("../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
+    background: -o-linear-gradient(bottom, #7287AE 40%, transparent 40%), url("../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
+    background: linear-gradient(to top, #7287AE 40%, transparent 40%), url("../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
     padding-top: 7rem;
   }
 }
