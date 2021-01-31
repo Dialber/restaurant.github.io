@@ -1,7 +1,9 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 .l-header{
-    background:url("../images/backgroundTop.svg") 0 100%/133% auto no-repeat, linear-gradient(to bottom, #7287AE 50%, transparent 50%);
+   // background:url("../images/backgroundTop.svg") 0 100%/133% auto no-repeat, linear-gradient(to bottom, #7287AE 50%, transparent 50%);
+    background:  #7287AE;
+    clip-path: polygon(0 0, 100% 0%, 100% 71%, 0% 100%);
     padding-bottom: 4rem;
     width: 100%;
     margin-left: auto;
