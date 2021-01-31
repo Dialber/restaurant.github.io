@@ -805,6 +805,7 @@ mixin creado para el comportamiento hover,active,focus;
 
 .card__close {
   cursor: pointer;
+  background-color: transparent;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: none;
@@ -835,6 +836,11 @@ mixin creado para el comportamiento hover,active,focus;
 }
 .card__close::before {
   font-size: 2rem;
+}
+.card__close:hover, .card__close:focus {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .card__parraf {
@@ -1761,10 +1767,7 @@ mixin creado para el comportamiento hover,active,focus;
 
 .socialMedia__span {
   position: absolute;
-  -webkit-clip-path: inset(1px 1px 1px 1px);
-          clip-path: inset(1px 1px 1px 1px);
-  font-size: 0px;
-  height: 0;
+  clip: rect(0 0 0 0);
 }
 
 @media (min-width:24rem) {

@@ -12,13 +12,9 @@ function ShowText(){
 			}			
 			parraf[index].classList.toggle("ellipsis");
 			parraf[index].nextElementSibling.style.display="none";
-			parraf[index].removeEventListener("click",Exit);
 		})
 		
 	}
-}
-function Exit(){
-	return;
 }
 /*funcion para cerrar los cards al dar click en el icono de cerrar*/
 var list_boton_close=document.getElementsByClassName("card__close");
@@ -40,11 +36,12 @@ function HowTextMenu(){
 	var listinput=document.getElementsByClassName("food__input");
 	for (let index = 0; index < listinput.length; index++) {
 		listinput[index].addEventListener("click",()=>{
-			listinput[index].previousElementSibling.classList.toggle("ellipsis--2");    
 			if(listinput[index].textContent=="Read more"){
+				listinput[index].previousElementSibling.classList.toggle("ellipsis--2");    
 				listinput[index].textContent="Hide Text";
 				return;
 			}
+			listinput[index].previousElementSibling.classList.toggle("ellipsis--2");    
 			listinput[index].textContent="Read more";
 			return
 		});		
@@ -98,12 +95,20 @@ buttonPopularMenu.addEventListener("click",()=>{
 	return;
 })
 /*En este método escucho el click del button de los menu,si estan ocultos los muestro,si estan visibles los oculto*/
-function Accsesible(){	
-	if(window.innerWidth>=992){
-		idbarsMenu.setAttribute("aria-expanded","true");
+
+function Accsesible(){
+	var screenWidth=window.innerWidth;
+	switch (screenWidth) {		
+		case screenWidth >= 992:
+			idbarsMenu.setAttribute("aria-expanded","true");
+			break;		
+		default:
+			idbarsMenu.setAttribute("aria-expanded","false");	
+			break;
 	}
 }
 
-window.addEventListener('load',HowTextMenu,false);
+window.addEventListener('resize',Accsesible,false);//escucho si hubo cambio de tamaño de la pantalla para poner el expanded del menu en "true" para pantallas grandes.
 window.addEventListener('load',Accsesible,false);
+window.addEventListener('load',HowTextMenu,false);
 window.addEventListener('load',ShowText,false);

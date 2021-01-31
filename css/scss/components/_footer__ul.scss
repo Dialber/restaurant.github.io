@@ -30,9 +30,7 @@
 }
 .socialMedia__span{
     position: absolute;
-    clip-path: inset(1px 1px 1px 1px);
-    font-size: 0px;
-    height: 0;
+    clip:rect(0 0 0 0);
 }
 
 @media #{$phones}{

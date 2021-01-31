@@ -26,6 +26,7 @@
 }
 .card__close{      
 	@include conduct($color-card-text,$color-primary,true);
+	background-color: transparent;
 	align-self: flex-end;
 	display: none;
 	padding:0;
@@ -33,6 +34,10 @@
 	border: 0;
 	&::before{
 		font-size: 2rem;
+	}
+	&:hover,&:focus{
+		background-color: transparent;
+		box-shadow: none;
 	}
 }
 .card__parraf{
