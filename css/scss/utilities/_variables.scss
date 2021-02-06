@@ -6,7 +6,17 @@ $color-ligth-yellow:#F2CE94;
 $color-ligth-grey:#e3ecc2;
 $color-orange:#FECC8C;
 
-$color-primary:$color-blue;//color más usado
+/*nueva paleta de colores*/
+$blue:#7052ff;
+$pink:#d06aff;
+$ligth-pink:#ff81ff;
+$red:#ff7360;
+$yellow:#ffff51;
+$black:#000000;
+
+$backgroundColor-Header-Footer:$red;
+
+$color-primary:$red;//color más usado
 $color-secundary:$color-violet;
 $color-card-text:$color-grey;//color texto de las cards
 $color-link:$color-ligth-yellow;//color para seudoclases en los links
@@ -30,7 +40,7 @@ $font-h1-small:3.598rem;
 $font-h2:2.143rem;
 $font-h3:1.473rem;
 $font-h4:1.1rem;
-$font-p:1.116rem;
+$font-p:1.05rem;
 $font-a:1.116rem;
 $font-span:1.25rem;
 $font-btn:1.033rem;

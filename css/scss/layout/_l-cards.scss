@@ -20,16 +20,14 @@
     &::after{
         content: "";
         position: absolute;
-        width: 6rem;
-        height: 5rem;
-        background: url("../images/pointsBlues.svg") 0 0 /100% no-repeat border-box; 
-        bottom: .5rem;
-        right: 1rem;        
-        clip-path: inset(0 18% 0 0);
+        @include bars(transparent,$pink,.3rem,5rem);  
+        bottom: 2rem;
+        left: 3rem; 
+        transform: rotate(90deg);
     }
 }
 .cardsH2{
-    color: $color-primary;
+    color:$color-primary;
     text-transform: uppercase;
     margin-bottom: 1rem;
     position: relative;
@@ -56,12 +54,10 @@
 @media #{$large-desktops}{
     
     .cardsContainer{        
-        width: 81.2%;
+        width: 87%;
     }  
     .l-cards{
         &::after{
-            width: 8rem;
-            height: 6rem; 
             right: 3rem; 
         }
     }

@@ -3,9 +3,7 @@
 .l-footer{
     width: 100%;
     position: relative;  
-    padding-top: 2rem;  
-    padding-bottom: 1rem;
-    background:linear-gradient(to top, #7287AE 60%, transparent 60%),url("../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
+    padding-top: 2rem;
     &::after,&::before{
         content: "";        
         position: absolute;
@@ -14,9 +12,7 @@
         content: "";
     }
     &::before{
-        width: 6rem;
-        height: 5rem;
-        background: url("../images/pointsBlues.svg") 0 0 /100% no-repeat border-box; 
+        @include bars(transparent,$pink,.3rem,5rem);  
         top: .5rem;
         left: 2.5rem;
         z-index: 10;
@@ -24,12 +20,10 @@
 }
 @media #{$phones}{
    .l-footer{
-       padding-top: 7rem;
    }
 }
 @media #{$landscape-phones}{
     .l-footer{
-        padding-top: 9rem;
         &::before{
             top:2.5rem;
             left: 2.5rem;
@@ -37,32 +31,21 @@
     }
 }
 @media #{$tablets}{
-    .l-footer{
-        background:linear-gradient(to top, #7287AE 40%, transparent 40%),url("../images/backgroundBottom.svg") 100% 0%/133% auto no-repeat;
-        padding-top: 7rem;
+    .l-footer{ 
     }
 }
 @media #{$desktops}{
-   .l-footer{
-       padding-top: 11rem;
+   .l-footer{ 
    }
 }
 @media #{$large-desktops}{
-    .l-footer{
-        padding-top: 15rem;
-        &::before{
-            width: 8rem;
-            height: 6rem;
-        }
-    }
+   
 }
 @media #{$extra-large-desktops}{
     .l-footer{
-        padding-top: 15rem;
     }
 }
 @media #{$four-k}{
     .l-footer{
-        padding-top: 10rem;
     }
 }

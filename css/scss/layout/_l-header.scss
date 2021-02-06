@@ -2,7 +2,7 @@
 @import "../utilities/mixins";
 .l-header{
    // background:url("../images/backgroundTop.svg") 0 100%/133% auto no-repeat, linear-gradient(to bottom, #7287AE 50%, transparent 50%);
-    background:  #7287AE;
+    background:$color-primary;
     clip-path: polygon(0 0, 100% 0%, 100% 71%, 0% 100%);
     padding-bottom: 4rem;
     width: 100%;
@@ -13,16 +13,15 @@
     &::before,&::after{
         content: "";
         position: absolute;
-        width: 6rem;
-        height: 5rem;
-        background: url("../images/points.svg") 0 0 /100% no-repeat border-box; 
+        @include bars($color-primary,$yellow,.3rem,5rem);        
+        /* background: url("../images/points.svg") 0 0 /100% no-repeat border-box; */ 
     }
     &::before{
         bottom: 4rem;
         left: 2rem;
     }
     &::after{
-        right: -1.1rem;
+        right: 2.9rem;
         bottom: 50%;
         transform:rotate(90deg);
     }
@@ -68,12 +67,7 @@
 }
 @media #{$large-desktops}{
     .l-header{
-        padding-bottom: 13rem;
-        &::before,&::after{
-            width: 8rem;
-            height: 6rem;
-        }
-        
+        padding-bottom: 13rem;      
         &::before{
             bottom: 6rem;
             left: 8rem;

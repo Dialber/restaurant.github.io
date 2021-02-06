@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 .l-voucher{
-    background: url("../images/voucher/backgroundSmall.jpg") 0 0 /cover no-repeat;
+    background: url("../images/voucher/pexels-elle-hughes-small.jpg") 0 0 /cover no-repeat;
     padding: 4rem 1rem;
     position: relative; 
     display: flex;
@@ -15,22 +15,18 @@
     &::before{
         top: -1.7rem;
         left: 2.5rem;
-        width: 6rem;
-        height: 5rem;
-        background: url("../images/points.svg") 0 0 /100% no-repeat border-box; 
-        clip-path: inset(40% 0 0 0);
+        @include bars(transparent,$pink,.3rem,5rem);  
     }
     &::after{
-        width: 6rem;
-        height: 5rem;
-        background: url("../images/pointsBlues.svg") 0 0 /100% no-repeat border-box; 
-        right: 2.5rem;
+        @include bars(transparent,$yellow,.3rem,5rem); 
+        transform: rotate(90deg); 
+        right: 4rem;
         bottom: -3.3rem;        
     }
 }
 @media  #{$landscape-phones}{
     .l-voucher{
-        background: url("../images/voucher/backgroundMedium.jpg") 0 0 /cover no-repeat;
+        background: url("../images/voucher/pexels-elle-hughes-Medium.jpg") 0 0 /cover no-repeat;
     }
 }
 @media  #{$tablets}{
@@ -38,22 +34,11 @@
 }
 @media  #{$desktops}{
     .l-voucher{
-        background: url("../images/voucher/backgroundLarge.jpg") 0 0 /cover no-repeat;
-       
-       
+        background: url("../images/voucher/pexels-elle-hughes-large.jpg") 0 0 /cover no-repeat;
     }
 }
 @media  #{$large-desktops}{
-   .l-voucher{
-    &::before{
-        width: 8rem;
-        height: 6rem;
-    }
-    &::after{
-        width: 8rem;
-        height: 6rem;    
-    }
-   }
+   
 }
 @media  #{$extra-large-desktops}{
    

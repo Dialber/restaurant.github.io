@@ -46,8 +46,14 @@ mixin creado para el comportamiento hover,active,focus;
         display: none;
     }
 }
-@mixin points($color,$width,$height,$width-point){
+//Para crear las barras-->parámetros(color,color2,ancho de cada barra,altura de cada barra)
+@mixin bars($color,$color2,$width,$height){
     width: $width;
-    height: $height;   
-    background: radial-gradient($width-point circle at center center,$color 50%, transparent 50%) 0 0/20% 25%;    
+    height: $height;
+    background-color: $color;
+    box-shadow: .4rem 0 0 0 $color2,.8rem 0 0 0 $color,
+                1.2rem 0 0 0 $color2,1.6rem 0 0 0 $color,
+                2rem 0 0 0 $color2,2.4rem 0 0 0 $color,
+                2.8rem 0 0 0 $color2,3.2rem 0 0 0 $color,    
+                3.6rem 0 0 0 $color2,4rem 0 0 0 $color;    
 }

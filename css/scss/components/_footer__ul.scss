@@ -8,7 +8,7 @@
     align-items: center;
     color:$color-primary;
     position: relative;
-    top:-6rem;
+    top:100%;
 }
 .footer__li{
     margin-right: .8rem;
@@ -36,9 +36,7 @@
 }
 
 @media #{$phones}{
-    .footer__ul{
-        top: -8rem;
-    }        
+         
 }
 @media  #{$landscape-phones}{
      
