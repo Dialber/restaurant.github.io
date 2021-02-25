@@ -3,20 +3,25 @@
 .footer__containerAll{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     position: relative;
     z-index: 50;
-    >*{
-        margin-bottom: 1.5rem;
-    }
+}
+.author{
+    background-color:$color-primary;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 @media  #{$landscape-phones}{
     .footer__containerAll{
-        width: 95%;
+      
     } 
 }
 @media  #{$tablets}{
@@ -26,11 +31,10 @@
 }
 @media  #{$desktops}{
    .footer__containerAll{
-       width: 85%;
+      
    } 
 }
 @media  #{$large-desktops}{
-    .footer__containerAll{   
-       width: 77.7%; 
+    .footer__containerAll{ 
     }
 }

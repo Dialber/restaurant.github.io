@@ -1,7 +1,7 @@
  @import "../utilities/variables";
 .button--voucher{
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: .7rem;
+    padding-top: .7rem;
 }
 @media  #{$landscape-phones}{
    
@@ -14,8 +14,8 @@
 }
 @media  #{$large-desktops}{
     .button--voucher{
-        padding-bottom: 1.6rem;
-        padding-top: 1.6rem;
+        padding-bottom: 1.3rem;
+        padding-top: 1.3rem;
     }
 }
 @media  #{$extra-large-desktops}{

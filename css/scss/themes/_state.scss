@@ -24,10 +24,34 @@
     cursor: pointer;
     pointer-events:auto ;
     @include Ellipsis($font-p,1.5,4,0);
-
+    position: relative;
+    text-align: justify;
+    &::after{
+        content: "\22EF";
+        background-image: linear-gradient(left,transparent 20%,$color-white 30%);
+        width: 2rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
 }
 .ellipsis--2{    
     @include Ellipsis(1.295rem,1.5,4,0);
+    text-align: justify;
+    &::after{
+        content: "\22EF";
+        background-image: linear-gradient(left,transparent 20%,$color-white 30%);
+        width: 2rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 .showMenu{    
     display: flex;
@@ -43,34 +67,36 @@
         top:0;
         left: 0;
         position: absolute;
-        background-image: linear-gradient(rgba(0 ,0 ,0 ,0.7),rgba(0 ,0 ,0, 0.7));;
+        background-image: linear-gradient(rgba(0 ,0 ,0 ,0.7),rgba(0 ,0 ,0, 0.7));
         z-index: 99;
     }
 }
-/* .shadow{
-    position: relative;  
-    overflow: hidden;
-    &::after,&::before{
-        content: "";
-        display: block;
-        background-color: $color-white;
-        position: absolute;
-        transition: transform .5s ease; 
+.scroolTop{
+    position: fixed;
+    color:$color-black;
+    z-index: 1000;
+    bottom:15%;
+    right: 1rem;
+    transform: translateX(20rem);
+    visibility: hidden;
+    &:hover,&:active{
+        color:lighten($color-black, 30%);
+        cursor: pointer;
     }
-    &::before{        
-        width: 100%;
-        height: .2rem;       
-        bottom: 0;
-        left: 0;
-        transform: translateX(-120%);
+    &:hover{
+        transform: scale(1.1);
     }
-    &:focus::before{
-        transform: translateX(0);
+    &:active{
+        transform: scale(1);
+        color:lighten($color-black, 10%);
     }
-    &:hover::before{
-        transform: translateX(0);
-    }
-} */
+}
+.animate{
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform .5s ease-in;
+}
+
 @media  #{$tablets}{
      
 }
