@@ -1,5 +1,5 @@
 # restaurant.github.io
-Un psd que me encontré en la web y me guto tanto que me llevo a maquetarlo.
+Choqué con un psd en la web, me gustó y hice la maquetación. Cambié algunas cositas del diseño, un poco más a mi gusto.
 ************Tecnologías utilizadas************
 -HTML5
 -PUG
