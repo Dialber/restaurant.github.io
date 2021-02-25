@@ -9,10 +9,15 @@
     margin-right: auto;
     width: 100%;
     position: relative;
-    z-index: 50;    
-    >*{
-       /*  margin-bottom: 1.5rem; */
-    }
+    z-index: 50;
+}
+.author{
+    background-color:$color-primary;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 @media  #{$landscape-phones}{
     .footer__containerAll{
