@@ -3,13 +3,13 @@
 .footer__containerAll{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     position: relative;
-    z-index: 50;
+    z-index: 50;    
     >*{
        /*  margin-bottom: 1.5rem; */
     }

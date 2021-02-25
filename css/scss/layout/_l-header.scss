@@ -1,20 +1,17 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 .l-header{
-   // background:url("../images/backgroundTop.svg") 0 100%/133% auto no-repeat, linear-gradient(to bottom, #7287AE 50%, transparent 50%);
-    background:$color-primary;
-    clip-path: polygon(0 0, 100% 0%, 100% 71%, 0% 100%);
-    padding-bottom: 4rem;
+    background:url("../images/top.svg") 0 100%/cover no-repeat;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     overflow-x: hidden;
+    padding-bottom: 12rem;
     &::before,&::after{
         content: "";
         position: absolute;
-        @include bars($color-primary,$yellow,.3rem,5rem);        
-        /* background: url("../images/points.svg") 0 0 /100% no-repeat border-box; */ 
+        @include bars(transparent,$yellow,.3rem,5rem);
     }
     &::before{
         bottom: 4rem;
@@ -22,7 +19,7 @@
     }
     &::after{
         right: 2.9rem;
-        bottom: 50%;
+        bottom: 60%;
         transform:rotate(90deg);
     }
     
@@ -48,26 +45,22 @@
 @media #{$phones}{}
     
 @media #{$landscape-phones}{
-    .l-header{
-        padding-bottom: 7rem;
-    } 
+    
 }
 @media #{$tablets}{
     .l-header{
-        padding-bottom: 9rem;
         &::before{
             left: 6rem;
         }
     } 
 }
 @media #{$desktops}{
-    .l-header{
-        padding-bottom: 10rem;
-    } 
+   .l-header{
+       padding-bottom: 16rem;
+   }
 }
 @media #{$large-desktops}{
-    .l-header{
-        padding-bottom: 13rem;      
+    .l-header{   
         &::before{
             bottom: 6rem;
             left: 8rem;
@@ -75,7 +68,9 @@
     }
 }
 @media #{$extra-large-desktops}{
-    
+    .l-header{
+        padding-bottom: 20rem;
+    }
 }
 @media  #{$four-k}{
     

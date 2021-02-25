@@ -26,7 +26,8 @@ mixin creado para el comportamiento hover,active,focus;
             transition: box-shadow ease .3s;
         }        
         &:active{
-            background-color: darken($color1, 40%);       
+            background-color: darken($color1, 40%);            
+            box-shadow:0 0 0 .2rem darken($color2, 5%),0 0 0 .4rem darken($color1, 5%);   
         }     
     }   
 }

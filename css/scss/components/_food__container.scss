@@ -2,7 +2,8 @@
 .food__container{
     display: flex;
     flex-direction: column;
-    background-color:$color-white;
+    background-color:$color-text;
+    position: relative;
 }
 .food__container--rotate{
     flex-direction: column-reverse;
@@ -16,6 +17,7 @@
     position: relative; 
     &::after{
         position: absolute;
+        z-index: 1;
         display: block;
         content: "";
         bottom: -3.3rem;

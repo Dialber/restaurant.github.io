@@ -1,0 +1,39 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+.inputext{
+  width: 100%;
+  border: 0;
+  padding:.5rem;
+  font-size: .9rem;
+  color: $color-primary;
+  background-color: $color-white;
+  &:focus{
+    box-shadow: 0 0 0 .2rem $color-black;
+  }
+  }
+.submit{
+    width: auto;
+    padding: .6rem 3rem;
+    margin-left: auto;    
+    @include conduct($color-primary,$color-text,false);
+    color: $color-primary;
+    text-transform: uppercase;
+    &:hover,&:focus,&:active{
+      color:$color-text;
+    }
+}
+.textarea{
+    margin-bottom: 1rem; 
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    &:focus{
+      box-shadow: 0 0 0 .2rem $color-black;
+    }
+}
+@media #{$landscape-phones}{
+  
+}
+@media #{$tablets}{
+ 
+}

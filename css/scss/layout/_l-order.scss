@@ -13,7 +13,7 @@
 @media  #{$landscape-phones}{
     .order__containerElements{
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
     } 
 }
 @media  #{$tablets}{

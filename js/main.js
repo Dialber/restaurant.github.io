@@ -20,6 +20,8 @@ function ShowText(){
 function Exit(){
 	return;
 }
+
+
 /*funcion para cerrar los cards al dar click en el icono de cerrar*/
 var list_boton_close=document.getElementsByClassName("card__close");
 for (let index = 0; index < list_boton_close.length; index++) {
@@ -35,17 +37,17 @@ for (let index = 0; index < list_boton_close.length; index++) {
 
 var clase=".card__parraf";
 
-/*Mostrar y ocultar texto de los menu grandes*/
+/*Mostrar y ocultar texto de los menu grandes,cambio el texto del botón*/
 function HowTextMenu(){
 	var listinput=document.getElementsByClassName("food__input");
 	for (let index = 0; index < listinput.length; index++) {
 		listinput[index].addEventListener("click",()=>{
 			listinput[index].previousElementSibling.classList.toggle("ellipsis--2");    
-			if(listinput[index].textContent=="Read more"){
-				listinput[index].textContent="Hide Text";
+			if(listinput[index].textContent=="Hide text"){
+				listinput[index].textContent="Read More";
 				return;
 			}
-			listinput[index].textContent="Read more";
+			listinput[index].textContent="Hide text";
 			return
 		});		
 	}
@@ -103,7 +105,40 @@ function Accsesible(){
 		idbarsMenu.setAttribute("aria-expanded","true");
 	}
 }
+function ShowScroollTop() {
+	window.addEventListener('scroll',()=>{
+		var arrow=document.getElementById('id-food__h2');/*selecciono el h2 ,que es mas o menos una distancia suficiente para que aparesca la flecha para desplasarte hacia arriva*/
+		let position=arrow.getBoundingClientRect().top;/*guardo la posicion que tiene respecto al tope del documento*/
+		let up=document.getElementById('id-scroollTop');
+		if((position < window.innerHeight/2) && (up.classList.contains('animate')==false)){/*cuando el elemento este a la mitad del tamaño de la pantalla,lo muestro añadiendo la clase animate*/
+			up.classList.add('animate');	
+			return;
+		}
+		if((position < window.innerHeight/2) && (up.classList.contains('animate')==true)){/*Si ya tiene la clase animate no hago nada*/
+			return;
+		}
+		if((position > window.innerHeight/2) && (up.classList.contains('animate')==true)){/*Si la posición es mayor, le elimino la clase animate */
+			up.classList.remove('animate');
+			return;
+		}
+		else{
+			return;
+		}
+	})
+}
+function SaveLocalStorage(){
+	document.getElementById('id-submit').addEventListener('click',()=>{
+		localStorage.setItem('name',document.getElementById('id-nombre').value);
+		localStorage.setItem('email',document.getElementById('id-email').value);
+		localStorage.setItem('number',document.getElementById('id-number').value);
+		localStorage.setItem('sms',document.getElementById('id-sms').value);
+		
+	})
+}
 
+
+window.addEventListener('load',ShowScroollTop,false);
+window.addEventListener('load',SaveLocalStorage,false);
 window.addEventListener('load',HowTextMenu,false);
 window.addEventListener('load',Accsesible,false);
 window.addEventListener('load',ShowText,false);

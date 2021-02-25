@@ -10,7 +10,7 @@ html(lang="en")
 		link(rel="stylesheet", href="css/fontawesome/css/all.min.css")
 		link(rel="stylesheet", href="css/styles.css")
 	body
-		header(class="l-header",id="id-header")
+		header(class="l-header clip",id="id-header")
 			a(class="header__skip link", href="#id-cards") Principal content
 			article(class="menu")
 				article(class="menu__logo")
@@ -23,6 +23,7 @@ html(lang="en")
 						li(class="menu__li"): a(class="menu__a link ", href="#id-promo") Promotion
 						li(class="menu__li"): a(class="menu__a link ", href="#id-cards") Menu
 						li(class="menu__li"): a(class="menu__a link ", href="#id-order") Order
+						li(class="menu__li"): a(class="menu__a link ", href="#id-containerAbout") Contact
 			article(class="containerH1")
 				h1(class="containerH1__h1") Tasty trails
 					br
@@ -83,11 +84,12 @@ html(lang="en")
 			button(class="button button__showMore",id="id-buttonPopularMenu") SHOW MORE
 				span(class="button__spanShowmore") kitchen recipes
 		article(class="l-food",id="id-promo")
-			article(class="food__container")
+			article(class="food__container") 
+				a(class="fas fa-arrow-circle-up fa-2x scroolTop", id="id-scroollTop",href="#id-header")
 				div(class="food__containerImg")
 					img(class="food__img",src="images/food/pexels-polina-tankilevitch-small.jpg",loading="lazy", alt="Plato de spaguetis con verduras y a su lado un plato con salsa blanca y verduras en su interior", srcset="")
 				div(class="food__information")
-					h2(class="food__h2") First Offer
+					h2(id="id-food__h2", class="food__h2") First Offer
 					p(class="card__p ellipsis--2 food__p") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur inventore quam numquam, odit sed et laborum tempora quod sapiente neque molestiae recusandae quia modi, cumque unde ipsam eius! Dolorem labore reprehenderit corporis, animi neque mollitia inventore obcaecati iste quos autem temporibus officiis veniam sit illo laborum! Tempore deserunt dignissimos labore!
 					button(class="food__input button") Read more
 						span(class="button__span") about this offer kitchen recipes
@@ -100,57 +102,55 @@ html(lang="en")
 				div(class="food__containerImg")
 					img(class="food__img",src="images/food/pexels-roman-odintsov-small.jpg",loading="lazy", alt="Plato de espaguetis con huevos,verduras,setas,maiz,carne y croquetas", srcset="")
 		article(class="l-order",id="id-order")
-			h2(class="order__h2") How to order
+			h2(class="order__h2") Steps to order
 			article(class="order__containerElements")
 				div(class="order__card")
-					span(class="order__span") 01
+					span(class="order__span") 1
 					h3(class="order__h3") Call us
 					p(class="order__p") Lorem, ipsum dolor sit amet consectetur adipisicing elit.?
 				div(class="order__card")
-					span(class="order__span") 02
+					span(class="order__span") 2
 					h3(class="order__h3") The menu
 					p(class="order__p") Lorem, ipsum dolor sit amet consectetur adipisicing elit.?
 				div(class="order__card")
-					span(class="order__span") 03
+					span(class="order__span") 3
 					h3(class="order__h3") Delivery
 					p(class="order__p") Lorem, ipsum dolor sit amet consectetur adipisicing elit.?
 		article(class="l-voucher")
-			h2(class="voucher__h2") Free delivery
+			h2(class="voucher__h2") Lorem, ipsum dolor.
 			div(class="voucher__container")
-				p(class="voucher__p") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet magnam atque illum natus dolor aut ratione autem itaque accusamus sequi?
-				input(class="button button--voucher",type="button", value="get voucher")
+				p(class="voucher__p") Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error beatae soluta quod! Sapiente, fugiat. Maxime perspiciatis quas illum explicabo! Porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At velit asperiores optio.				
 		article(class="l-quotes")
 			h2(class="quotes__h2")
 				p(class="quotes__span") Exclamation 
-			p(class="quotes__p") Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore aperiam in ullam dolores eos saepe aspernatur nam perferendis molestias sit? 
-			h3(class="quotes__h3") Agus Wuaiters
+			p(class="quotes__p") Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore aperiam in ullam dolores eos saepe aspernatur nam perferendis molestias sit? 			
 		footer(class="l-footer")
 			article(class="footer__containerAll")
 				ul(class="footer__ul")
 					li(class="footer__li"): a(class="footer__a fab fa-twitter icon", href="#"): span(class="socialMedia__span") twitter
 					li(class="footer__li"): a(class="footer__a fab fa-facebook-f icon", href="#"): span(class="socialMedia__span") facebook 
 					li(class="footer__li"): a(class="footer__a fab fa-instagram icon", href="#"): span(class="socialMedia__span") instagram
-				article(class="containerAbout")
-					article(class="containerAbout__text")
-						h2(class="containerAbout__h2") About
-						p(class="containerAbout__p") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam accusantium vitae praesentium voluptatem, omnis at!
+				article(class="containerAbout clip " id="id-containerAbout")
+					address(class="containerAbout__text")
+						h2(class="containerAbout__h2"): small Our place
+						p(class="containerAbout__p"): small  Telephone: +5455 4545 454
+						p(class="containerAbout__mail"): small info@yourmail.your.mail
+						p(class="containerAbout__street"): small 27 Your Location,2th Lorem ipsum dolor sit amet,LOREM IPSUM
 					article(class="containerAbout__about")
-						h2(class="containerAbout__h2") About
-						article(class="containerAll__ul")
-							ul(class="containerAbout__ul")
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Team
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Join us
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Ethic
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Goals
-							ul(class="containerAbout__ul")
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Team
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Join us
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Ethic
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Goals
-							ul(class="containerAbout__ul")
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Team
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Join us
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Ethic
-								li(class="containerAbout__li"): a(class="containerAbout__a link menu__a",href="#") Goals
+						h2(class="containerAbout__h2") Say hello !
+						form(class="formul", id="id-form")
+							div(class="formul__containerLI")
+								label(class="formul__label" for="name") name
+								input(id="id-nombre",class="formul__name inputext",type="text",required, name="name", placeholder="name")
+							div(class="formul__containerLI")
+								label(class="formul__label" for="email") email
+								input(id="id-email",class="formul__correo inputext",type="email", name="email",required, placeholder="mail")
+							div(class="formul__containerLI")
+								label(class="formul__label",name="telephone number" for="telephone") telephone number
+								input(id="id-number",class="formul__cel inputext",type="tel",required,name="telephone", placeholder="phone number")
+							div(class="formul__containerLI")
+								label(class="formul__label",name="message",for="sms") message
+								textarea(id="id-sms",class="formul__mens inputext textarea",name="sms",required, cols="30", rows="3", placeholder="messaje")
+							input(class="inputext submit",type="submit", value="submit",id="id-submit")
 			script(src="js/main.js")
 

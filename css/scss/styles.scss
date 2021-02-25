@@ -2,6 +2,8 @@
 @import "base/base";
 @import "base/typo";
 @import "utilities/mixins";
+@import "utilities/variables";
+@import "utilities/funciones";
 
 @import "components/icon";
 @import "components/button";
@@ -17,6 +19,8 @@
 @import "components/containerAbout";
 @import "components/footer__ul";
 @import "components/containerAbout__ul";
+@import "components/form";
+@import "components/input";
 @import "themes/state";
 @import "components/button--voucher";
 @import "components/btn__menu";

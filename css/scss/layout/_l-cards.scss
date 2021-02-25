@@ -29,9 +29,9 @@
 .cardsH2{
     color:$color-primary;
     text-transform: uppercase;
-    margin-bottom: 1rem;
-    position: relative;
-    top: -2rem;
+    margin-bottom: 3rem;
+    //position: relative;
+    //top: -2rem;
 }
 @media #{$phones}{
    .cardsContainer{

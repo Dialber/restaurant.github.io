@@ -3,41 +3,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
+    color:$color-text;
     padding-top: 14rem;
-    background-color: $color-primary;
-    clip-path: polygon(0 51%, 100% 0%, 100% 100%, 0% 100%);
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
     width: 100%;
+    background:url("../images/bottom.svg") 0 0 / cover no-repeat ;
 }
 .containerAbout__h2{
-    text-align: center;
+    text-align: left;
     margin-bottom: 1rem;
     font-size: 1.1rem;
     text-transform: uppercase;
-}
-.containerAbout__p{
-    padding: 0 1rem;
-    text-align: left;
-    font-size: .99rem;;
-}
-.containerAbout__li{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;     
-}
-.containerAbout__a{
-    font-size: 0.88rem;
-    padding: .3rem 1rem; 
-    width: 100%;
-    height: 100%;  
+    padding-bottom: 2rem;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 75%;
+        width: 75%;
+        height: .1rem;
+        background-color: $color-text;
+        bottom: 0;
+        left: 0;
+    }
 }
 .containerAbout__about{ 
     width: 100%;
 }
 .containerAbout__text{
-    margin-bottom: 2rem;
-    width: 100%;
+    margin-bottom: 5rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    >*:not(h2){
+        font-size: .85rem;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
 }
 .containerAll__ul{   
     display: flex;
@@ -57,19 +62,27 @@
     .containerAll__ul{
         width: 60%;
     }
+    .containerAbout__about{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media  #{$tablets}{
     .containerAbout{
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
+        padding-top: 18rem;
     }
     .containerAbout__text{
         margin-bottom: 0;
-        flex: 1;
+        flex: 1 1;
+        width: 100%;
     }
     .containerAbout__about{
-        flex:1;
+        flex:1 1;
+        width: 100%;
     }
     
     .containerAll__ul{
@@ -78,15 +91,22 @@
 }
 @media  #{$desktops}{    
     .containerAbout{
-        clip-path: polygon(0 61%, 100% 0%, 100% 100%, 0% 100%);
+        
     }
+
 }
 @media  #{$large-desktops}{
-    
+    .containerAbout{
+        padding-top: 20rem;
+    }
 }
 @media  #{$extra-large-desktops}{
-    
+    .containerAbout{
+        padding-top: 22rem;
+    }
 }
 @media  #{$four-k}{
-   
+    .containerAbout{
+        padding-top: 24rem;
+    }
 }
