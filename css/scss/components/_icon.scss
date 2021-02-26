@@ -2,8 +2,8 @@
 @import "../utilities/mixins";
 .icon{    
     font-size: 1.8rem;  
-    color:#fff;  
-    @include conduct($color-primary,$color-white,true);
+    color:$color-text;  
+    @include conduct($color-primary,$color-text,true);
 }
 
 @media #{$landscape-phones}{

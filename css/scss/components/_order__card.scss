@@ -11,13 +11,10 @@
     >*:not(p){
         margin-bottom: 1.5rem;
     }
-    &:last-of-type(){
-        margin-bottom: 0;
-    }
 }
 .order__h2{
     margin-bottom: 2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .order__p{
     text-align: center;
@@ -34,9 +31,9 @@
     align-items: center;
     flex-direction: column;
     border-radius: 100%;
-    width: 5rem;
-    height: 5rem;   
-    background-color: #fff;
+    width: 4rem;
+    height: 4rem;   
+    background-color: $color-white;
     color: $color-primary;
     font-size: 2.034rem;
     font-weight: 900;

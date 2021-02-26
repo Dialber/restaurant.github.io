@@ -1,8 +1,9 @@
 @import "../utilities/variables";
+@import "../utilities/funciones";
 body{
     width: 100%;
 	text-align: center;
-	margin: 0 auto;
+    margin: 0 auto;
     color: $color-white;
     background-color: $color-ligth-grey;
     font-size: 90%;
@@ -53,6 +54,14 @@ span{
 button{
     font-size: $font-btn;
     font-family: "Ubuntu",sans-serif;
+}
+textarea{
+    box-sizing: border-box;
+    font: inherit;
+}
+::placeholder{
+    color:$color-primary;    
+    text-transform: capitalize;
 }
 @media #{$landscape-phones}{
     html, body{

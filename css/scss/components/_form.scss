@@ -1,0 +1,31 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+.formul{
+    width: 100%;
+    >*{
+        margin-bottom: 1rem;
+    }
+}
+.formul__label{
+    font-size: 1px;
+    clip: rect(0 0 0 0 );
+    position: absolute;
+}
+.formul__containerLI{
+    position: relative;
+}
+@media #{$landscape-phones}{
+  
+}
+@media #{$tablets}{
+   
+}
+@media #{$desktops}{
+    
+}
+@media #{$large-desktops}{   
+   
+}
+@media #{$extra-large-desktops}{   
+   
+}

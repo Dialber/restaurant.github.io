@@ -2,30 +2,33 @@
 .food__container{
     display: flex;
     flex-direction: column;
-    background-color:$color-white;
+    background-color:$color-text;
+    position: relative;
 }
 .food__container--rotate{
     flex-direction: column-reverse;
 }
 .food__containerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;  
     position: relative; 
     &::after{
         position: absolute;
+        z-index: 1;
         display: block;
         content: "";
         bottom: -3.3rem;
         left: 45%;
-        width: 6rem;
-        height: 5rem;
-        background: url("../images/pointsBlues.svg") 0 0 /100% no-repeat border-box; 
+        @include bars(transparent,$pink,.3rem,5rem);  
     }
     &:last-of-type{
         &::after{
-            width: 6rem;
-            height: 5rem;
-            background: url("../images/points.svg") 0 0 /100% no-repeat border-box; 
+            transform: rotate(90deg);
+            @include bars(transparent,$yellow,.3rem,5rem);
+            bottom: 0;  
         }
     }    
 }
@@ -49,15 +52,7 @@
 @media  #{$large-desktops}{
     .food__containerImg{
         &::after{
-            width: 8rem;
-            height: 6rem;
             bottom: -3.5rem;
-        }
-        &:last-of-type{
-            &::after{
-                width: 8rem;
-                height: 6rem;
-            }
         }
     }
 }
