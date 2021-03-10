@@ -26,6 +26,7 @@
     @include Ellipsis($font-p,1.5,4,0);
     position: relative;
     text-align: justify;
+    
     &::after{
         content: "\22EF";
         background-image: linear-gradient(left,transparent 20%,$color-white 30%);
@@ -34,7 +35,7 @@
         bottom: 0;
         right: 0;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
     }
 }
